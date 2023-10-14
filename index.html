@@ -1,0 +1,55 @@
+<html>
+
+	<head>
+
+		<title>Code editor</title>
+
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/Cplayer.css">
+			
+	</head>
+
+	<body>
+		<!-- Here we have the divs for creating the header -->
+			<div id="topbar-container">
+			
+				<div id="logo">CodePlayer</div>
+			
+				<div id="buttonContainer">
+				
+					<div class="toggleButton active" id="html">HTML</div>
+					<div class="toggleButton" id="css">CSS</div>
+					<div class="toggleButton" id="javascript">JAVASCRIPT</div>
+					<div class="toggleButton active" id="output">output</div>
+				
+				</div>
+			
+			</div>
+		<!-- Here we have the div for the body container which consist of the textarea were the user can input their codes and watch them take action in the output box -->
+			<div id="bodycontainer">
+			
+				<textarea id="htmlPanel" class="Panel"><p id="paragraph">Hello world</p></textarea>
+				
+				<textarea id="cssPanel" class="Panel hidden">p { color: green};</textarea>
+				
+				<textarea id="javascriptPanel" class="Panel hidden">document.getElementById("paragraph").innerHTML="hello friend"</textarea>
+				
+				<iframe id="outputPanel" class="Panel"></iframe>
+			
+			</div>
+
+			<script src="js/Cscript.js"></script>
+
+	</body>
+
+
+</html>
